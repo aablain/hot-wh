@@ -1,0 +1,126 @@
+
+section.productsSection {
+  background-color: $off-white;
+  h1 {
+    text-align: center;
+    color: $red-primary;
+    font-size: 3rem;
+    margin-bottom: 0px;
+  }
+  h4 {
+    text-align: center;
+    margin-top: 0px;
+  }
+  & > h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: $red-primary;
+  }
+  & > h3 {
+    color: $red-primary;
+    font-size: 1.8rem;
+  }
+  hr {
+    box-shadow: none;
+    border: 1px solid $dark;
+    width: 30%;
+    margin-top: 50px;
+  }
+  .productsBox {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 25px;
+    &__product {
+      flex-basis: 32%;
+      width: 32%;
+      min-width: 32%;
+      max-width: 32%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      img {
+        max-height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+      }
+      &__text {
+        h3 {
+          flex-basis: 100%;
+          width: 100%;
+          text-align: center;
+          color: $red-primary;
+          font-size: 1.5rem;
+        }
+        p {
+          flex-basis: 100%;
+          // &:not(:last-of-type) {
+          //   flex-basis: 50%;
+          //   max-height: 250px;
+          // }
+        }
+      }
+    }
+  }
+  @media #{$tablet} {
+    .productsBox {
+      justify-content: center;
+      &__product {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        padding-top: 25px;
+
+        img {
+          max-width: 30%;
+          align-self: center;
+        }
+        &__text {
+          flex-basis: 70%;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  @media #{$mobile} {
+    hr {
+      width: 50%;
+      margin-top: 25px;
+    }
+    & > h2 {
+      border-top: 1px solid $dark;
+      border-bottom: 1px solid $dark;
+      padding-bottom: 8px;
+    }
+    & > h3 {
+      text-align: center;
+    }
+    .productsBox {
+      &__product {
+        img {
+          max-width: 100%;
+        }
+        &__text {
+          flex-basis: 100%;
+          padding-left: 0px;
+          padding-right: 0px;
+          h3 {
+            font-size: 2rem;
+          }
+          p {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
