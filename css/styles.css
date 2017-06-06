@@ -1,6 +1,8 @@
 body {
   margin-left: 0px;
   margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   width: 100%;
   min-width: 100vw;
   max-width: 100vw;
@@ -31,7 +33,7 @@ header {
       flex-direction: column;
       align-items: center; }
       header .headerBox__titles h1 {
-        color: #FF4B3E;
+        color: #cf3531;
         margin-bottom: 0px;
         padding-bottom: 15px;
         font-size: 3rem; }
@@ -40,7 +42,7 @@ header {
         padding: 10px;
         border-top: 2px solid #F5D6BA;
         border-bottom: 2px solid #F5D6BA;
-        color: #FF4B3E;
+        color: #cf3531;
         text-align: center;
         margin-top: 0px; }
   @media screen and (max-width: 884px) {
@@ -80,7 +82,7 @@ nav {
     padding-left: 0px; }
     nav ul a {
       text-decoration: none;
-      color: #FF4B3E;
+      color: #cf3531;
       transition: color 175ms ease-in-out;
       font-size: 1.2rem; }
       nav ul a li {
@@ -105,7 +107,7 @@ nav {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    color: #FF4B3E;
+    color: #cf3531;
     margin-top: 0px;
     margin-bottom: 0px;
     text-align: center;
@@ -192,7 +194,7 @@ footer {
   padding-top: 25px;
   padding-bottom: 25px; }
   footer h4 {
-    color: #FF4B3E;
+    color: #cf3531;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 5px; }
@@ -217,12 +219,125 @@ footer {
 .navbar-fixed {
   top: 10px;
   z-index: 5;
-  position: fixed; }
+  position: fixed;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5); }
   .navbar-fixed ul {
     margin-top: 0px;
     margin-bottom: 0px; }
 
 .padding-top {
   padding-top: 80px; }
+
+header.emergency {
+  background-color: #FAFAFA; }
+
+.inverse {
+  background-color: #CB4335; }
+  .inverse h2 {
+    color: #FAFAFA;
+    text-align: center; }
+  .inverse .hide {
+    opacity: 0; }
+  @media screen and (max-width: 555px) {
+    .inverse h2 a {
+      display: block; } }
+
+.caution {
+  color: #cf3531; }
+
+section.emergencySection {
+  background-color: #FAFAFA; }
+  section.emergencySection .emergencySection__box {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px; }
+    section.emergencySection .emergencySection__box > h2 {
+      text-align: center; }
+  section.emergencySection hr {
+    box-shadow: none;
+    border: 1px solid #2A2A2A;
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 35px; }
+  section.emergencySection .spaceBottom {
+    margin-bottom: 35px; }
+  section.emergencySection .mainTitle {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px; }
+  section.emergencySection .subtitle {
+    color: #cf3531;
+    text-align: center;
+    margin-top: 0px; }
+  section.emergencySection .section__gas {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    section.emergencySection .section__gas h2 {
+      width: 100%;
+      min-width: 100%;
+      flex-basis: 100%;
+      text-align: center; }
+    section.emergencySection .section__gas__box {
+      width: 48%;
+      min-width: 48%;
+      max-width: 48%;
+      flex-basis: 48%;
+      background-color: #F5D6BA;
+      padding: 10px;
+      border-radius: 3px;
+      margin-top: 15px; }
+      section.emergencySection .section__gas__box h3 {
+        width: 100%;
+        min-width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #cf3531;
+        margin-top: -35px; }
+      section.emergencySection .section__gas__box h4 {
+        text-align: center;
+        margin-top: 0px;
+        font-weight: 400; }
+  section.emergencySection .otherBox {
+    width: 48%;
+    min-width: 48%;
+    max-width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #F5D6BA;
+    margin-bottom: 70px; }
+    section.emergencySection .otherBox h4 {
+      text-align: center;
+      font-weight: 400; }
+  @media screen and (max-width: 884px) {
+    section.emergencySection .mainTitle {
+      font-size: 2.3rem; } }
+  @media screen and (max-width: 555px) {
+    section.emergencySection .mainTitle {
+      font-size: 2rem; }
+    section.emergencySection .section__gas__box {
+      width: 100%;
+      min-width: 100%;
+      flex-basis: 100%;
+      margin-top: 35px; }
+    section.emergencySection .otherBox {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      margin-bottom: 35px; }
+    section.emergencySection hr {
+      width: 100%; } }
+
+footer.emergencyFooter {
+  background-color: #cf3531; }
+  footer.emergencyFooter h4 {
+    color: #FAFAFA; }
 
 /*# sourceMappingURL=styles.css.map */

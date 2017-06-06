@@ -1,0 +1,143 @@
+
+header.emergency {
+  background-color: $off-white;
+}
+
+.inverse {
+  background-color: $red-darker;
+  h2 {
+    color: $off-white;
+    text-align: center;
+  }
+  .hide {
+    opacity: 0;
+  }
+  @media #{$mobile} {
+    h2 a {
+      display: block;
+    }
+  }
+}
+
+.caution {
+  color: $red-primary;
+}
+
+section.emergencySection {
+  background-color: $off-white;
+  .emergencySection__box {
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 75px;
+    & > h2 {
+      text-align: center;
+    }
+  }
+  hr {
+    box-shadow: none;
+    border: 1px solid $dark;
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 35px;
+  }
+  .spaceBottom {
+    margin-bottom: 35px;
+  }
+  .mainTitle {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    color: $red-primary;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .section__gas {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h2 {
+      width: 100%;
+      min-width: 100%;
+      flex-basis: 100%;
+      text-align: center;
+    }
+    &__box {
+      width: 48%;
+      min-width: 48%;
+      max-width: 48%;
+      flex-basis: 48%;
+      background-color: $light;
+      padding: 10px;
+      border-radius: 3px;
+      margin-top: 15px;
+      h3 {
+        width: 100%;
+        min-width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        color: $red-primary;
+        margin-top: -35px;
+        // text-shadow: 4px 2px 9px $text-transparent;
+      }
+      h4 {
+        text-align: center;
+        margin-top: 0px;
+        font-weight: 400;
+      }
+    }
+  }
+  .otherBox {
+    width: 48%;
+    min-width: 48%;
+    max-width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: $light;
+    margin-bottom: 70px;
+    h4 {
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+  @media #{$tablet} {
+    .mainTitle {
+      font-size: 2.3rem;
+    }
+  }
+  @media #{$mobile} {
+    .mainTitle {
+      font-size: 2rem;
+    }
+    .section__gas__box {
+      width: 100%;
+      min-width: 100%;
+      flex-basis: 100%;
+      margin-top: 35px;
+    }
+    .otherBox {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      margin-bottom: 35px;
+    }
+    hr {
+      width: 100%;
+    }
+  }
+}
+
+footer.emergencyFooter {
+  background-color: $red-primary;
+  h4 {
+    color: $off-white;
+  }
+}
