@@ -61,10 +61,6 @@ section.productsSection {
         }
         p {
           flex-basis: 100%;
-          // &:not(:last-of-type) {
-          //   flex-basis: 50%;
-          //   max-height: 250px;
-          // }
         }
       }
     }
@@ -81,6 +77,8 @@ section.productsSection {
 
         img {
           max-width: 30%;
+          width: 30%;
+          object-fit: contain;
           align-self: center;
         }
         &__text {
@@ -89,9 +87,6 @@ section.productsSection {
           max-width: 70%;
           padding-left: 10px;
           padding-right: 10px;
-        }
-        &:last-of-type img {
-          width: 30%;
         }
       }
     }
@@ -113,6 +108,7 @@ section.productsSection {
       &__product {
         img {
           max-width: 100%;
+          width: auto;
         }
         &__text {
           flex-basis: 100%;
@@ -124,9 +120,6 @@ section.productsSection {
           p {
             text-align: justify;
           }
-        }
-        &:last-of-type img {
-          width: auto;
         }
       }
     }
