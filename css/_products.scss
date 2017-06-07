@@ -85,8 +85,13 @@ section.productsSection {
         }
         &__text {
           flex-basis: 70%;
+          width: 70%;
+          max-width: 70%;
           padding-left: 10px;
           padding-right: 10px;
+        }
+        &:last-of-type img {
+          width: 30%;
         }
       }
     }
@@ -119,6 +124,9 @@ section.productsSection {
           p {
             text-align: justify;
           }
+        }
+        &:last-of-type img {
+          width: auto;
         }
       }
     }
