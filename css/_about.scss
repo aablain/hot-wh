@@ -1,0 +1,46 @@
+
+section.testimonials {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  .testimonies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .testimony {
+      flex-basis: 48%;
+      width: 48%;
+      max-width: 48%;
+      min-width: 48%;
+      h4 {
+        font-weight: 400;
+        font-size: 1.5rem;
+        span {
+          font-weight: bold;
+        }
+        &:first-of-type span {
+          color: $red-primary;
+        }
+      }
+    }
+  }
+  @media #{$tablet} {
+    .testimonies .testimony {
+      flex-basis: 100%;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+  @media #{$mobile} {
+    .testimonies .testimony {
+      border-bottom: 2px solid $dark;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}

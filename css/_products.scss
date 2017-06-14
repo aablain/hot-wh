@@ -1,6 +1,9 @@
 
 section.productsSection {
-  background-color: $off-white;
+  background-color: $white;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
   h1 {
     text-align: center;
     color: $red-primary;

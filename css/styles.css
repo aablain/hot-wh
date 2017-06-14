@@ -229,8 +229,46 @@ footer {
 .padding-top {
   padding-top: 80px; }
 
+section.testimonials {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto; }
+  section.testimonials .testimonies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    section.testimonials .testimonies .testimony {
+      flex-basis: 48%;
+      width: 48%;
+      max-width: 48%;
+      min-width: 48%; }
+      section.testimonials .testimonies .testimony h4 {
+        font-weight: 400;
+        font-size: 1.5rem; }
+        section.testimonials .testimonies .testimony h4 span {
+          font-weight: bold; }
+        section.testimonials .testimonies .testimony h4:first-of-type span {
+          color: #cf3531; }
+  @media screen and (max-width: 884px) {
+    section.testimonials .testimonies .testimony {
+      flex-basis: 100%;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding-top: 25px;
+      padding-bottom: 25px; } }
+  @media screen and (max-width: 555px) {
+    section.testimonials .testimonies .testimony {
+      border-bottom: 2px solid #2A2A2A; }
+      section.testimonials .testimonies .testimony:last-of-type {
+        border-bottom: none; } }
+
 section.productsSection {
-  background-color: #FAFAFA; }
+  background-color: #ffffff;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto; }
   section.productsSection h1 {
     text-align: center;
     color: #cf3531;
