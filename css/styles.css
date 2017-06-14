@@ -15,7 +15,7 @@ header {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-  background-color: #FAFAFA;
+  background-color: #ffffff;
   padding: 50px 80px;
   margin-bottom: 0px; }
   header .headerBox {
@@ -120,7 +120,7 @@ nav {
 
 section {
   padding: 25px;
-  background-color: #CB4335; }
+  background-color: #ffffff; }
   section .section__paragraphBox {
     width: 100%;
     min-width: 100%;
@@ -150,7 +150,7 @@ section {
     section .section__infoBox h1 {
       width: 100%;
       min-width: 100%;
-      color: #F5D6BA;
+      color: #cf3531;
       margin-left: auto;
       margin-right: auto;
       font-size: 2.4rem;
@@ -184,7 +184,7 @@ section {
         transform: translateY(-50%); }
     section .section__infoBox h5 {
       width: 100%;
-      color: #F5D6BA;
+      color: #cf3531;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -192,9 +192,10 @@ section {
 
 footer {
   padding-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  background-color: #cf3531; }
   footer h4 {
-    color: #cf3531;
+    color: #FAFAFA;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 5px; }
@@ -211,7 +212,7 @@ footer {
     font-weight: 300; }
 
 .lightText {
-  color: #F5D6BA; }
+  color: #cf3531; }
 
 .darkText {
   color: #2A2A2A; }

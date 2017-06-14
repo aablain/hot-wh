@@ -21,7 +21,7 @@ header {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-  background-color: $off-white;
+  background-color: $white;
   padding: 50px 80px;
   margin-bottom: 0px;
   .headerBox {
@@ -165,7 +165,7 @@ nav {
 
 section {
   padding: 25px;
-  background-color: $red-darker;
+  background-color: $white;
   .section {
     &__paragraphBox {
       width: 100%;
@@ -200,7 +200,7 @@ section {
       h1 {
         width: 100%;
         min-width: 100%;
-        color: $light;
+        color: $red-primary;
         margin-left: auto;
         margin-right: auto;
         font-size: 2.4rem;
@@ -240,7 +240,7 @@ section {
       }
       h5 {
         width: 100%;
-        color: $light;
+        color: $red-primary;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -256,8 +256,9 @@ section {
 footer {
   padding-top: $padding-amount;
   padding-bottom: $padding-amount;
+  background-color: $red-primary;
   h4 {
-    color: $red-primary;
+    color: $off-white;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 5px;
@@ -282,7 +283,7 @@ footer {
 // Misc Classes ======================
 
 .lightText {
-  color: $light;
+  color: $red-primary;
 }
 
 .darkText {
