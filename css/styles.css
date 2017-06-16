@@ -300,14 +300,15 @@ footer {
 .padding-top {
   padding-top: 80px; }
 
-.showMenu {
-  min-height: 180px;
-  z-index: 20; }
-  .showMenu ul a {
-    padding: 1px; }
-    .showMenu ul a:not(:first-of-type) {
-      display: inline;
-      animation: showTheMenu 500ms ease-in-out; }
+@media screen and (max-width: 555px) {
+  .showMenu {
+    min-height: 180px;
+    z-index: 20; }
+    .showMenu ul a {
+      padding: 1px; }
+      .showMenu ul a:not(:first-of-type) {
+        display: inline;
+        animation: showTheMenu 500ms ease-in-out; } }
 
 section.testimonials {
   max-width: 1100px;

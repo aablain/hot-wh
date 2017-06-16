@@ -389,14 +389,16 @@ footer {
 }
 
 .showMenu {
-  min-height: 180px;
-  z-index: 20;
-  ul {
-    a {
-      padding: 1px;
-      &:not(:first-of-type) {
-        display: inline;
-        animation: showTheMenu 500ms ease-in-out;
+  @media #{$mobile} {
+    min-height: 180px;
+    z-index: 20;
+    ul {
+      a {
+        padding: 1px;
+        &:not(:first-of-type) {
+          display: inline;
+          animation: showTheMenu 500ms ease-in-out;
+        }
       }
     }
   }
