@@ -32,4 +32,12 @@ $(document).ready(function() {
       }
     }
   });
+
+  $("#menu").click(function() {
+    if ($("nav").hasClass("showMenu")) {
+      $("nav").removeClass("showMenu");
+    } else {
+      $("nav").addClass("showMenu");
+    }
+  });
 });

@@ -1,3 +1,10 @@
+@-webkit-keyframes showTheMenu {
+  0% {
+    opacity: 0; }
+  99% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 body {
   margin-left: 0px;
   margin-right: 0px;
@@ -69,7 +76,8 @@ nav {
   background-color: #F5D6BA;
   margin-top: -16px;
   margin-bottom: -16px;
-  min-height: 69px; }
+  min-height: 69px;
+  transition: min-height 400ms ease-in-out; }
   nav ul {
     width: 100%;
     max-width: 500px;
@@ -88,6 +96,8 @@ nav {
       color: #cf3531;
       transition: color 175ms ease-in-out;
       font-size: 1.2rem; }
+      nav ul a:first-of-type {
+        display: none; }
       nav ul a li {
         list-style: none;
         display: inline;
@@ -97,7 +107,17 @@ nav {
         color: #2A2A2A; }
   @media screen and (max-width: 555px) {
     nav ul a {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      flex-basis: 100%;
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      text-align: center; }
+      nav ul a:first-of-type {
+        display: inline;
+        font-size: 1.6rem; }
+      nav ul a:not(:first-of-type) {
+        display: none; } }
 
 .ctaPhoneNumber {
   width: 100%;
@@ -128,21 +148,46 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px; }
+    section.homepage > a {
+      text-decoration: none; }
+      section.homepage > a h1 {
+        padding: 15px 25px;
+        border: 3px solid #cf3531;
+        color: #cf3531;
+        font-size: 2.4rem;
+        border-radius: 10px;
+        transition: background-color 125ms ease-in-out; }
+        section.homepage > a h1:hover {
+          background-color: #cf3531;
+          color: #ffffff; }
+    section.homepage .section__paragraphBox {
+      flex-basis: 50%;
+      width: 50%;
+      min-width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 175ms ease-in-out; }
+      section.homepage .section__paragraphBox h1 {
+        font-size: 3rem;
+        color: #cf3531;
+        text-align: center; }
+      section.homepage .section__paragraphBox:hover {
+        transform: scale(1.02);
+        background-color: #cf3531;
+        border-radius: 25px; }
+        section.homepage .section__paragraphBox:hover h1 {
+          color: #F5D6BA; }
   section .section__paragraphBox {
-    flex-basis: 48%;
-    width: 48%;
-    min-width: 48%;
+    width: 100%;
+    min-width: 100%;
     padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 175ms ease-in-out; }
+    padding-bottom: 25px; }
     section .section__paragraphBox h3 {
       font-size: 1.7rem;
       max-width: 700px;
@@ -151,16 +196,6 @@ section {
       text-align: justify; }
     section .section__paragraphBox img {
       max-height: 300px; }
-    section .section__paragraphBox h1 {
-      font-size: 3rem;
-      color: #cf3531;
-      text-align: center; }
-    section .section__paragraphBox:hover {
-      transform: scale(1.02);
-      background-color: #cf3531;
-      border-radius: 25px; }
-      section .section__paragraphBox:hover h1 {
-        color: #F5D6BA; }
   section .section__hr {
     width: 80%;
     color: #2A2A2A;
@@ -216,7 +251,11 @@ section {
       text-align: center;
       max-width: 500px; }
   @media screen and (max-width: 555px) {
-    section .section__paragraphBox {
+    section.homepage > a h1 {
+      padding: 9px 13px;
+      font-size: 1.7rem;
+      border-width: 2px; }
+    section.homepage .section__paragraphBox {
       flex-basis: 100%;
       width: 100%;
       min-width: 100%; } }
@@ -252,13 +291,23 @@ footer {
   top: 10px;
   z-index: 5;
   position: fixed;
-  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.5);
+  overflow: hidden; }
   .navbar-fixed ul {
     margin-top: 0px;
     margin-bottom: 0px; }
 
 .padding-top {
   padding-top: 80px; }
+
+.showMenu {
+  min-height: 180px;
+  z-index: 20; }
+  .showMenu ul a {
+    padding: 1px; }
+    .showMenu ul a:not(:first-of-type) {
+      display: inline;
+      animation: showTheMenu 500ms ease-in-out; }
 
 section.testimonials {
   max-width: 1100px;
